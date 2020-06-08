@@ -27,11 +27,27 @@ const dataList = data;
  @param page - Page number to be shown
 */
 function showPage(list, page) {
+   // create variable for where to start and stop accessing students
    const startIndex = (page * 10) - 10
    const endIndex = page * 10
+   // log out above variable to make sure that they are working
    console.log(startIndex, endIndex)
+
+   // loop over data array
+   for (let i = 0; i < data.length; i++) {
+      // make sure loop is working properly
+      console.log("looping")
+
+      // add conditional to display proper students
+      if (i >= startIndex && i < endIndex) {
+         // make sure conditional is working properly to access the right 10 students
+         console.log(i)
+
+         // create element for each student as you iterate through the list
+      }
+   }
 }
-showPage(data, 1)
+showPage(data, 2)
 // The showPage function needs to:
    // accept two parameters: list, page - (provided `dataList` variable above will get passed in for list arg when showPage is called)
    // empty the student list element - (can set innerHTML to '')
