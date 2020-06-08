@@ -9,8 +9,10 @@ New FSJS project 2 - List Pagination and Filter - v2 - Data version
    // Comments in parens are notes to Mods and SSSs who are testing this out.
 
 // Variable to hold list data - (this variable will be provided for student, I think)
+// student could also just use "data" directly to access the existing data variable from data.js - Lee
 const dataList = data;
 
+// other than the data, not sure there is any need for global variables here and these should instead be created in functions - Lee
 // Need to create some variables here to:
    // target '.student-list' element
    // target '.link-list' element
@@ -24,17 +26,25 @@ const dataList = data;
  @param list - List of students to be paginated
  @param page - Page number to be shown
 */
-
+function showPage(list, page) {
+   const startIndex = (page * 10) - 10
+   const endIndex = page * 10
+   console.log(startIndex, endIndex)
+}
+showPage(data, 1)
 // The showPage function needs to:
    // accept two parameters: list, page - (provided `dataList` variable above will get passed in for list arg when showPage is called)
    // empty the student list element - (can set innerHTML to '')
+   // is this needed? - Lee
    // set the pageStart and pageEnd values - (we'll probably still provide these to students)
       // const pageStart = (page * perPage) - perPage;
       // const pageEnd = page * perPage;
+   // I like naming these startIndex and endIndex - Lee
    // loop over students
       // use template below to create DOM elements for the students that should show on the page
       // use data from list argument to add student info to DOM elements
       // format date - (the data.js file has a formatDate() function that can be used for this)
+      // if we are going to give the students a function to perform this, which they might not truly understand, I think we should remove this extra level of complexity and just format the data as expected in the individual objects - Lee
       // use insertAdjacentHTML method with 'beforeend' option to insert elements into list container
    
       // DOM TEMPLATE for list items - (Not sure if we should provide this for students or not)
