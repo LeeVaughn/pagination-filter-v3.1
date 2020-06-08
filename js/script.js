@@ -32,9 +32,13 @@ function showPage(list, page) {
    const endIndex = page * 10
    // log out above variable to make sure that they are working
    console.log(startIndex, endIndex)
+   // create variable to select student-list element
+   const studentList = document.querySelector(".student-list")
+   // log out variable to make sure it is working as expected
+   console.log(studentList)
 
-   // loop over data array
-   for (let i = 0; i < data.length; i++) {
+   // loop over list array
+   for (let i = 0; i < list.length; i++) {
       // make sure loop is working properly
       console.log("looping")
 
@@ -44,10 +48,25 @@ function showPage(list, page) {
          console.log(i)
 
          // create element for each student as you iterate through the list
+         const studentItem = `
+            <li class="student-item cf">
+               <div class="student-details">
+                  <img class="avatar" src="${list[i].picture.large}" alt="Profile Picture">
+                  <h3>${list[i].name.first} ${list[i].name.last}</h3>
+                  <span class="email">${list[i].email}</span>
+               </div>
+               <div class="joined-details">
+                  <span class="date">Joined ${list[i].registered.date}</span>
+            </div>
+            </li>
+         `;
+
+         // insert above elements
+         studentList.insertAdjacentHTML("beforeend", studentItem);
       }
    }
 }
-showPage(data, 2)
+showPage(data, 1)
 // The showPage function needs to:
    // accept two parameters: list, page - (provided `dataList` variable above will get passed in for list arg when showPage is called)
    // empty the student list element - (can set innerHTML to '')
@@ -64,7 +83,7 @@ showPage(data, 2)
       // use insertAdjacentHTML method with 'beforeend' option to insert elements into list container
    
       // DOM TEMPLATE for list items - (Not sure if we should provide this for students or not)
-
+      // I think we should just provide and example of what the HTML should look like and leave it to the students to create the template literal - Lee
          /* 
             const studentTemplate = `
                <li class="student-item cf">
