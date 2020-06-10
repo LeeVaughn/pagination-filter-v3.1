@@ -60,7 +60,6 @@ function showPage(list, page) {
    }
 }
 
-showPage(data, 1)
 // The showPage function needs to:
    // accept two parameters: list, page - (provided `dataList` variable above will get passed in for list arg when showPage is called)
    // empty the student list element - (can set innerHTML to '')
@@ -134,8 +133,6 @@ function appendPageLinks(list) {
    });
 }
 
-appendPageLinks(data)
-
 // The appendPageLinks function needs to:
    // accept one parameter: list - (provided `dataList` variable above will get passed in for list arg when appendPageLinks is called)
    // empty the link list element - (can set innerHTML to '')
@@ -156,3 +153,19 @@ appendPageLinks(data)
 // Call appendPageLinks(dataList) and test it
 
 // (Example markup for search element is in index.html file if anyone wants to try for the exceeds :) )
+function appendSearch() {
+   const header = document.querySelector(".header");
+
+   const searchBar = `
+      <label for="search" class="student-search">
+         <input id="search" placeholder="Search by name...">
+         <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>
+      </label>
+   `
+
+   header.insertAdjacentHTML("beforeend", searchBar)
+}
+
+showPage(data, 1);
+appendPageLinks(data);
+appendSearch();
