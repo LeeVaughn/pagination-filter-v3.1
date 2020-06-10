@@ -9,10 +9,10 @@ New FSJS project 2 - List Pagination and Filter - v2 - Data version
    // Comments in parens are notes to Mods and SSSs who are testing this out.
 
 // Variable to hold list data - (this variable will be provided for student, I think)
-// student could also just use "data" directly to access the existing data variable from data.js - Lee
+//? student could also just use "data" directly to access the existing data variable from data.js - Lee
 const dataList = data;
 
-// other than the data, not sure there is any need for global variables here and these should instead be created in functions - Lee
+//? other than the data, not sure there is any need for global variables here and these should instead be created in functions - Lee
 // Need to create some variables here to:
    // target '.student-list' element
    // target '.link-list' element
@@ -30,23 +30,13 @@ function showPage(list, page) {
    // create variable for where to start and stop accessing students
    const startIndex = (page * 10) - 10
    const endIndex = page * 10
-   // log out above variable to make sure that they are working
-   console.log(startIndex, endIndex)
    // create variable to select student-list element
    const studentList = document.querySelector(".student-list")
-   // log out variable to make sure it is working as expected
-   console.log(studentList)
 
    // loop over list array
    for (let i = 0; i < list.length; i++) {
-      // make sure loop is working properly
-      console.log("looping")
-
       // add conditional to display proper students
       if (i >= startIndex && i < endIndex) {
-         // make sure conditional is working properly to access the right 10 students
-         console.log(i)
-
          // create element for each student as you iterate through the list
          const studentItem = `
             <li class="student-item cf">
@@ -66,15 +56,16 @@ function showPage(list, page) {
       }
    }
 }
+
 showPage(data, 1)
 // The showPage function needs to:
    // accept two parameters: list, page - (provided `dataList` variable above will get passed in for list arg when showPage is called)
+   //? is this needed? - Lee
    // empty the student list element - (can set innerHTML to '')
-   // is this needed? - Lee
    // set the pageStart and pageEnd values - (we'll probably still provide these to students)
       // const pageStart = (page * perPage) - perPage;
       // const pageEnd = page * perPage;
-   // I like naming these startIndex and endIndex - Lee
+   //? I like naming these startIndex and endIndex - Lee
    // loop over students
       // use template below to create DOM elements for the students that should show on the page
       // use data from list argument to add student info to DOM elements
@@ -83,7 +74,7 @@ showPage(data, 1)
       // use insertAdjacentHTML method with 'beforeend' option to insert elements into list container
    
       // DOM TEMPLATE for list items - (Not sure if we should provide this for students or not)
-      // I think we should just provide and example of what the HTML should look like and leave it to the students to create the template literal - Lee
+      //? I think we should just provide and example of what the HTML should look like and leave it to the students to create the template literal - Lee
          /* 
             const studentTemplate = `
                <li class="student-item cf">
@@ -107,9 +98,29 @@ showPage(data, 1)
  Append page links function - Create and append pagination links for list
  @param list - List of students to be paginated
 */
+function appendPageLinks(list) {
+   // create variable for number of pages needed
+   const numOfPages = Math.ceil(list.length / 10)
+   // create variable to select link-list element
+   const linkList = document.querySelector(".link-list")
+   
+   // create pagination buttons based on the number of pages needed
+   for (let i = 1; i <= numOfPages; i++) {
+      const button = `<li><button type="button">${i}</button</li>`
+
+      // insert above elements
+      linkList.insertAdjacentHTML("beforeend", button);
+   }
+
+   // gives first pagination button a class of active
+   document.querySelector("button").className = "active";
+}
+
+appendPageLinks(data)
 
 // The appendPageLinks function needs to:
    // accept one parameter: list - (provided `dataList` variable above will get passed in for list arg when appendPageLinks is called)
+   //? I made a similar note above but this doesn't seem necessary - Lee
    // empty the link list element - (can set innerHTML to '')
    // create variable for the number of links - (Math.ceil(list.length / perPage))
    // create loop that iterates once for each link - (let i = 0; i < linkCount; i++)
