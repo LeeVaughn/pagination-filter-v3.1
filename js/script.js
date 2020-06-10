@@ -114,6 +114,13 @@ function appendPageLinks(list) {
 
    // gives first pagination button a class of active
    document.querySelector("button").className = "active";
+
+   // create event listener
+   linkList.addEventListener("click", (e) => {
+      if (e.target.tagName === "BUTTON") {
+         console.log("clicked", e.target)
+      }
+   });
 }
 
 appendPageLinks(data)
@@ -130,6 +137,7 @@ appendPageLinks(data)
    // add click handler to link container
       // use event delegation to make only BUTTONS trigger click handler
       // create variable to target '.link-list button' elements
+      //? since only one button will ever have the class of active you can just use querySelector for this - Lee
       // loop over buttons to remove active className from all buttons
       // after loop add active className to clicked button
       // call showPage passing in list parameter and textContent of clicked button
