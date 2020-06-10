@@ -33,6 +33,9 @@ function showPage(list, page) {
    // create variable to select student-list element
    const studentList = document.querySelector(".student-list")
 
+   // removes any previously displayed students
+   studentList.innerHTML = ""
+
    // loop over list array
    for (let i = 0; i < list.length; i++) {
       // add conditional to display proper students
@@ -60,7 +63,6 @@ function showPage(list, page) {
 showPage(data, 1)
 // The showPage function needs to:
    // accept two parameters: list, page - (provided `dataList` variable above will get passed in for list arg when showPage is called)
-   //? is this needed? - Lee
    // empty the student list element - (can set innerHTML to '')
    // set the pageStart and pageEnd values - (we'll probably still provide these to students)
       // const pageStart = (page * perPage) - perPage;
@@ -103,6 +105,9 @@ function appendPageLinks(list) {
    const numOfPages = Math.ceil(list.length / 10)
    // create variable to select link-list element
    const linkList = document.querySelector(".link-list")
+
+   // removes any previously displayed pagination
+   linkList.innerHTML = ""
    
    // create pagination buttons based on the number of pages needed
    for (let i = 1; i <= numOfPages; i++) {
@@ -118,7 +123,13 @@ function appendPageLinks(list) {
    // create event listener
    linkList.addEventListener("click", (e) => {
       if (e.target.tagName === "BUTTON") {
-         console.log("clicked", e.target)
+         // remove active class from current element
+         document.querySelector(".active").className = "";
+         // add active class to clicked button
+         e.target.className = "active"
+
+         // show page for clicked button
+         showPage(list, e.target.textContent)
       }
    });
 }
@@ -127,7 +138,6 @@ appendPageLinks(data)
 
 // The appendPageLinks function needs to:
    // accept one parameter: list - (provided `dataList` variable above will get passed in for list arg when appendPageLinks is called)
-   //? I made a similar note above but this doesn't seem necessary - Lee
    // empty the link list element - (can set innerHTML to '')
    // create variable for the number of links - (Math.ceil(list.length / perPage))
    // create loop that iterates once for each link - (let i = 0; i < linkCount; i++)
