@@ -41,19 +41,18 @@
 <!-- step -->
 #### Seeking assistance
 
-* If you're having trouble with a bug or moving forward with the project:
-  * Reach out to your Slack team.  
-       **Pro Tip:** A good “Help!” Slack post begins with a friendly greeting, details any important info like the problem you’re having, what you’ve tried so far to fix it, and a link to your repo.  
+* If you're having trouble with a bug or moving forward with the project:  
   * Take a look at this great study guide: [List Pagination and Filter Study Guide](https://drive.google.com/file/d/1OD1diUsTMdpfMDv677TfL1xO2CEkykSz/view?usp=sharing)
-  * Review the unit material.
-  * Practice your Google skills by rephrasing your question in Google until you find helpful results.
+  * Review the unit material again.
+  * Use your Google skills to find the information you need. Try rephrasing your search if you aren't finding the information you need.
+  * Reach out to your Slack team.
+    * **Pro Tip:** A good “Help!” post in Slack begins with a friendly greeting, details any important info related to the problem you’re having, what you’ve tried so far to fix it, and most importantly, a link to your repo.
 
 
 <!-- step -->
 #### No snippets, plugins or libraries, including jQuery
 
-* For this project, avoid using the popular jQuery library.  All code for this project must be your own, and must be plain JavaScript, often referred to as "vanilla" JavaScript.
-* Avoid using any other libraries, plugins or code snippets for any aspect of this project, including the pagination.
+* Avoid using any libraries, plugins, or code snippets for any aspect of this project. All of the code for this project should be your own and in plain JavaScript, often referred to as "Vanilla JavaScript".
 
 
 <!-- step -->
