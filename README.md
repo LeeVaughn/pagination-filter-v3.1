@@ -10,10 +10,10 @@
 
 * Create a new repo for this project on [GitHub](https://github.com/).
 * Create a `README.md` file for your repo. Add details about your project to the `README`, for example:
-  * A description of the project in your own words
-  * The skills, techniques and process used to complete the project
+  * A description of the project in your own words.
+  * The skills, techniques, and process used to complete the project.
   * If you’ve attempted to earn an “Exceeds Expectations” grade, list the “Extra Credit” features you added.
-* If you need a reminder on how to use GitHub and GitHub desktop, please refer back to the workshop, [Share Your Projects with GitHub Desktop](https://teamtreehouse.com/library/share-your-techdegree-projects-with-github-desktop).
+* If you need a reminder on how to use GitHub and GitHub Desktop app, please refer back to the workshop, [Share Your Projects with GitHub Desktop](https://teamtreehouse.com/library/share-your-techdegree-projects-with-github-desktop).
 
 
 <!-- step -->
@@ -23,6 +23,8 @@
   * An `index.html` file contains the initial HTML markup.  ** Do not make any changes to this file.**
   * Two CSS files, `design.css` and `reset.css` inside the `css` folder. These files contain specific styling required to make the pagination features and list look good.
   * A `script.js` file in the `js` folder. You'll add code to this file. We've provided code comments to get you started.
+  * A `data.js` file, which contains the data you will use for this project.
+  <!-- TODO the section below will still need to be updated to match the new project -->
   * Example HTML files in the `examples` folder:
     * The `example-exceeds.html` and `example-meets.html` files demonstrate what a meets and exceeds project will look like in the browser.
     * The `44students.html` and `64 students.html` files allow you to test your solution against lists of varying length.
@@ -31,7 +33,7 @@
 <!-- step -->
 #### Follow the Instructions Below
 
-* It can be a lot easier to write a program, if you divide it into smaller, more manageable parts that you program one at a time. The instructions below divide the project into individual sections, which are further broken up into even smaller steps.  Follow along, one step at a time.
+* It can be a lot easier to write a program, if you break it into smaller, more manageable parts that you program one at a time. The instructions below divide the project into individual sections, which are further broken up into even smaller steps. Follow along, one step at a time, testing your code as you go.
   
 ***
 
