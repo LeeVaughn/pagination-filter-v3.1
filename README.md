@@ -76,8 +76,17 @@
   * Create two variables to store the start index and the end index of the list items to be displayed on the given page. To make this function dynamic, use the `page` parameter and some basic math to calculate the value of these variables like so:
     * Start Index = (`page` parameter * items per page) - items per page
     * End Index = `page` parameter * items per page
+  * Select the `UL` element with a class of `student-list` and assign its value to a variable.
+  * Use the innerHTML property set the HTML content of the variable you just created to an empty string. This will remove any students that might have previously been displayed.
   * Loop over the `list` parameter.
-    * Inside the loop, display any list item with an index that is greater than or equal to the `start index` variable **and** less than the `end index` variable.
+  * Inside the loop:
+    * Write a conditional statement that checks if the current index (`i`) is greater than or equal to the `start index` variable **and** less than the `end index` variable.
+    * Inside that conditional:
+      <!-- TODO include line numbers for example code once starter files are done -->
+      * Create the DOM elements needed to display the information for each matching student as you iterate over the `list` parameter. See the comments in the index.html file for an example of what the final version of these elements should look like.
+      * **Pro Tip** Because you will need to create multiple elements to display the student information, you might consider using a template literal for this.
+      <!-- TODO add link to the docs for insertAdjacentHTML in Resources -->
+    * Insert the elements you have created to the `UL` element with a class of `student-list`. The insertAdjacentHTML method and `beforeend` option works well for this.
 * **Pro Tip:** If you call this function in the early stages of building the application, you’ll be able to use console.log statements and the Chrome Dev Tools console to test and check that variables, values and indexes are working the way you expect. Don't forget to use the `data` variable and page number as arguments when you call the function!
 * **Project Warm Ups:** Creating and using functions, and selecting and manipulating sections of a list can feel confusing at first.  For some helpful practice, check out the [List Section Selection](https://teamtreehouse.com/library/fsjs-project-warm-up-list-section-selection) and [What's the Deal with Functions](https://teamtreehouse.com/library/fsjs-project-warm-up-whats-the-deal-with-functions) project warm-ups.
 
@@ -85,9 +94,20 @@
 <!-- step -->
 #### Add Pagination Links
 
-* Create a function that creates and appends functioning pagination links.
-* This function should accept a single `list` parameter to represent the actual list of students that you’ll pass in as an argument later when you call this function.
+* Create a function that creates and appends functioning pagination buttons.
+* This function should accept a single `list` parameter to represent student data that will be passed as an argument when the function is called.
 * Inside the function:
+  * Create a variable to store the value of the number of pagination buttons needed. You can calculate this using the length of the `list` parameter.
+  * Select the `UL` element with a class of `link-list` and assign its value to a variable.
+  * Use the innerHTML property set the HTML content of the variable you just created to an empty string. This will remove any pagination that might have previously been displayed.
+  * Loop over the variable for the number of pages needed that you created earlier.
+  * Inside the loop:
+    <!-- TODO include line numbers for example code once starter files are done -->
+    * Create the DOM elements needed to display the pagination link as you iterate over the number of pages. See the comments in the index.html file for an example of what this element should look like.
+    * Insert the elements you have created to the `UL` element with a class of `link-list`. The insertAdjacentHTML method and `beforeend` option works well for this.
+  * Select the first pagination link and give it a class name of `active`.
+
+  <!-- TODO below -->
   * Create and append the DOM elements for the pagination links.
     * Use lines 119-137 in the `examples/example-meets.html` file as your template.
     * Pay close attention to how elements are nested, any necessary class names or other element attributes, and where your additions should be appended.
