@@ -17,14 +17,14 @@
 
 
 <!-- step -->
-#### Download the project files
+#### Download the Project Files
 
 * You are provided with several starter files:
   * An `index.html` file contains the initial HTML markup.  ** Do not make any changes to this file.**
   * Two CSS files, `design.css` and `reset.css` inside the `css` folder. These files contain specific styling required to make the pagination features and list look good.
   * A `script.js` file in the `js` folder. You'll add code to this file. We've provided code comments to get you started.
-  * A `data.js` file, which contains the data you will use for this project.
-  <!-- TODO the section below will still need to be updated to match the new project -->
+  * A `data.js` file, which contains the data you will use for this project. This file includes a `data` variable, which you can use in the `script.js` file to access the student data.
+  <!-- TODO the section below will still need to be updated once the starter files are set up -->
   * Example HTML files in the `examples` folder:
     * The `example-exceeds.html` and `example-meets.html` files demonstrate what a meets and exceeds project will look like in the browser.
     * The `44students.html` and `64 students.html` files allow you to test your solution against lists of varying length.
@@ -39,7 +39,7 @@
 
 ## Instructions
 <!-- step -->
-#### Seeking assistance
+#### Seeking Assistance
 
 * If you're having trouble with a bug or moving forward with the project:  
   * Take a look at this great study guide: [List Pagination and Filter Study Guide](https://drive.google.com/file/d/1OD1diUsTMdpfMDv677TfL1xO2CEkykSz/view?usp=sharing)
@@ -50,14 +50,15 @@
 
 
 <!-- step -->
-#### No snippets, plugins or libraries, including jQuery
+#### No Snippets, Plugins or Libraries, including jQuery
 
 * Avoid using any libraries, plugins, or code snippets for any aspect of this project. All of the code for this project should be your own and in plain JavaScript, often referred to as "Vanilla JavaScript".
 
 
 <!-- step -->
-#### Create your global variables
+#### Create your Global Variables
 
+<!-- ? Not sure we need this section as the project can be completed without any global variables -->
 * This project can be completed with just two global variables
   * Create a variable to store the student `list item` elements in the student list.  
     * **Pro Tip:** Log out the variable storing the list to ensure it equals the list of `li` items and not the container of the `li` elements.
@@ -67,22 +68,22 @@
 <!-- step -->
 #### Display a “page”
 
-* Create a function to hide all the students except for the ten you want displayed on a given page. 
+* Create a function that will show a “page” of ten students.
 * This function should have two parameters:
-  * The `list` parameter to represent the actual list of students that you’ll pass in as an argument later when you call this function.
-  * The `page` parameter to represent the page number that you’ll pass in as an argument later when you call this function.
+  * A `list` parameter to represent student data that will be passed as an argument when the function is called.
+  * A `page` parameter to represent the page number that will be passed in as an argument when the function is called.
 * Inside the function:
-  * Create two variables to store the start index and the end index of the list items to be displayed on the given page.  To make this function dynamic and work with a list of any length, a bit of basic math can be used to determine these values.
+  * Create two variables to store the start index and the end index of the list items to be displayed on the given page. To make this function dynamic, use the `page` parameter and some basic math to calculate the value of these variables like so:
     * Start Index = (`page` parameter * items per page) - items per page
     * End Index = `page` parameter * items per page
   * Loop over the `list` parameter.
     * Inside the loop, display any list item with an index that is greater than or equal to the `start index` variable **and** less than the `end index` variable.
-* **Pro Tip:** If you call this function in the early stages of building the function, you’ll be able to use log statements and the Chrome dev tools console to test and check that variables, values and indexes are what you think they are.
-* **Project Warm Ups:** Creating and using functions, and selecting and manipulating sections of a list can feel confusing at first.  For some helpful practice, check out the project Warm Ups [List Section Selection](https://teamtreehouse.com/library/fsjs-project-warm-up-list-section-selection) and [What's the Deal with Functions](https://teamtreehouse.com/library/fsjs-project-warm-up-whats-the-deal-with-functions).
+* **Pro Tip:** If you call this function in the early stages of building the application, you’ll be able to use console.log statements and the Chrome Dev Tools console to test and check that variables, values and indexes are working the way you expect. Don't forget to use the `data` variable and page number as arguments when you call the function!
+* **Project Warm Ups:** Creating and using functions, and selecting and manipulating sections of a list can feel confusing at first.  For some helpful practice, check out the [List Section Selection](https://teamtreehouse.com/library/fsjs-project-warm-up-list-section-selection) and [What's the Deal with Functions](https://teamtreehouse.com/library/fsjs-project-warm-up-whats-the-deal-with-functions) project warm-ups.
 
 
 <!-- step -->
-#### Add pagination links
+#### Add Pagination Links
 
 * Create a function that creates and appends functioning pagination links.
 * This function should accept a single `list` parameter to represent the actual list of students that you’ll pass in as an argument later when you call this function.
