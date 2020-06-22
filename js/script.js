@@ -100,6 +100,7 @@ function showPage(list, page) {
  Append page links function - Create and append pagination links for list
  @param list - List of students to be paginated
 */
+//? since we are no longer appending, we might want to change the name of this function to addPageLinks or addPagination
 function appendPageLinks(list) {
    // create variable for number of pages needed
    const numOfPages = Math.ceil(list.length / 10)
