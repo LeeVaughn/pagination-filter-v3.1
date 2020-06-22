@@ -50,7 +50,7 @@ function showPage(list, page) {
                </div>
                <div class="joined-details">
                   <span class="date">Joined ${list[i].registered.date}</span>
-            </div>
+               </div>
             </li>
          `;
 
@@ -60,6 +60,7 @@ function showPage(list, page) {
    }
 }
 
+//* Robert's original comments with my comments added with a ? tag and - Lee at the end
 // The showPage function needs to:
    // accept two parameters: list, page - (provided `dataList` variable above will get passed in for list arg when showPage is called)
    // empty the student list element - (can set innerHTML to '')
@@ -71,7 +72,7 @@ function showPage(list, page) {
       // use template below to create DOM elements for the students that should show on the page
       // use data from list argument to add student info to DOM elements
       // format date - (the data.js file has a formatDate() function that can be used for this)
-      // if we are going to give the students a function to perform this, which they might not truly understand, I think we should remove this extra level of complexity and just format the data as expected in the individual objects - Lee
+      //? if we are going to give the students a function to perform this, which they might not truly understand, I think we should remove this extra level of complexity and just format the data as expected in the individual objects - Lee
       // use insertAdjacentHTML method with 'beforeend' option to insert elements into list container
    
       // DOM TEMPLATE for list items - (Not sure if we should provide this for students or not)
@@ -133,6 +134,7 @@ function appendPageLinks(list) {
    });
 }
 
+//* Robert's original comments with my comments added with a ? tag and - Lee at the end
 // The appendPageLinks function needs to:
    // accept one parameter: list - (provided `dataList` variable above will get passed in for list arg when appendPageLinks is called)
    // empty the link list element - (can set innerHTML to '')
