@@ -118,44 +118,47 @@
 
 
 <!-- step -->
-#### Call your functions
+#### Call Functions
 
-* Call the show page function, passing in as arguments, the global variable for the list items, and the number 1 for the first page, which should be shown initially.
-* Call the append page links function, passing in as an argument, the global variable for the list items.
-
-
-<!-- step -->
-#### Add code comments
-
-* Replace the code comments in the file with your own code comments.
-* The key to creating good code comments is to keep them brief, but clear, so that your fellow developers can get an idea of what's going on in your code at a glance, without having to review every line of your code.
+* Call the first function you created to display a “page”, passing in the `data` variable and `1` as arguments.
+* Call the second function you created to add pagination buttons, passing the `data` variable as an argument.
+* **Note:** You may have already called these functions in your app if you were testing things as you went along.
 
 
 <!-- step -->
-#### Review the "How you'll be graded" section
+#### Finishing the Project
 
-* Check out the "How you'll be graded" section, located above, next to the instructions tab, just below the project title. This section lists specifically what will be considered and checked when your project is being reviewed, and your project grade is being determined.
+The final stage of the project is perhaps the most important. This is where your developer skills really shine as you carefully double-check that you've accomplished all requirements and that your project is ready for submission.
 
-
-<!-- step -->
-#### Cross-Browser consistency:
-
-* Google Chrome has become the default development browser for most developers. With such a selection of browsers for users to choose from, it's a good idea to get in the habit of testing your projects in all modern browsers.
-
-
-<!-- step -->
-#### Quality Assurance and the Student Project Submission Checklist
-
-* Take the time for thorough quality assurance testing.  Before you submit your project for review, please check off all of the items on the [Student Project Submission Checklist](http://treehouse-techdegree.s3.amazonaws.com/Student-Project-Submission-Checklist.pdf).
-* Share your project in Slack in the `#review-my-project` channel to get a preliminary review and catch anything you might have missed.
+1. **Code comments** - It’s a best practice for development code to be well commented. Replace provided comments with your own to briefly describe your code and what it does.
+2. **Code readability** - Readability is second only to functionality. Double-check your code to ensure the spacing and indentation is consistent and in keeping with best practices. 
+3. **Cross browser consistency** - To pass, your project only needs to work in Chrome. But it’s common for developers to test their projects in multiple browsers to know how they will perform out in the wild.
+4. **Quality Assurance Testing** -  This is a key step in the development process.  
+  * Open and run your app.
+  * Open the Chrome DevTools console.
+  * Pretend to be a user and test all aspects of functionality and every possible state of the app, while monitoring the console for bugs and resolving any that arise.
 
 
 <!-- step -->
-**NOTE: What you submit is what will get reviewed**
+#### Before Submitting the Project
 
-* When you submit your project, a snapshot is taken of your repository, and that is what the reviewer will see.  Consequently, the reviewer won't see any changes you make to your repo **after** you submit the project.  
+Before you submit your project, check off each item in the project submissions checklist below.
 
-***
+<input type="checkbox"> I have read all of the project instructions, including the “**[How you’ll be graded](https://teamtreehouse.com/projects/a-random-quote-generator#how-you-ll-be-graded)**” section for this project.
+
+<input type="checkbox"> I understand what is needed to receive a Meets or Exceeds Expectations grade, and asked for clarification about grading requirements on Slack if necessary.
+
+<input type="checkbox"> My GitHub repo for this project contains only this project, only files needed to make this project run, and a `README.md` file providing details about my project.
+
+<input type="checkbox"> I wrote all of my own code for this project. Any code included in my project that I did not write myself is appropriately attributed to its source.
+
+<input type="checkbox"> I have completed all of the project requirements and believe the project is ready to receive a meets or exceeds expectation grade.
+
+<input type="checkbox"> I have received a preliminary review of my project in Slack to catch anything I might have missed.
+
+<input type="checkbox"> I understand that in order to receive an Exceeds Expectations grade, I must complete all extra credit items.
+  
+<input type="checkbox"> I understand that what I submit is what will get reviewed, and that when I submit my project, any changes I make after the submission won't be seen by my reviewer.
 
 
 ## Extra Credit
