@@ -155,6 +155,9 @@ function appendPageLinks(list) {
 // Call appendPageLinks(dataList) and test it
 
 // (Example markup for search element is in index.html file if anyone wants to try for the exceeds :) )
+
+
+// create function to append search elements to see how it would look but didn't include actual search functionality
 function appendSearch() {
    const header = document.querySelector(".header");
 
