@@ -1,4 +1,9 @@
 /**
+New FSJS project 2 - List Pagination and Filter - v2 - Data version
+*/
+
+//? Do we need to include any of the info below or can we just use the above comment? - Lee 
+/**
  * New FSJS project 2 - List Pagination and Filter - v2 - Data version
  * Data file - Includes date formatting helper function and array of student objects
  * URL used to get data - https://randomuser.me/api/?results=42&nat=us&exc=id,login,nat,gender,dob,location,phone,cell
@@ -6,7 +11,7 @@
  */
 
 
-// Array of cool student objects
+// Array of student objects
 const data = [
 	{
 		"name": {
@@ -16,7 +21,7 @@ const data = [
 		},
 		"email": "ethel.dean@example.com",
 		"registered": {
-			"date": "2005-12-15T17:19:19.981Z",
+			"date": "12-15-2005",
 			"age": 15
 		},
 		"picture": {
@@ -32,7 +37,7 @@ const data = [
 		},
 		"email": "lorraine.lynch@example.com",
 		"registered": {
-			"date": "2006-02-24T07:20:07.600Z",
+			"date": "02-24-2006",
 			"age": 14
 		},
 		"picture": {
@@ -48,7 +53,7 @@ const data = [
 		},
 		"email": "gregory.vargas@example.com",
 		"registered": {
-			"date": "2013-03-20T10:51:31.346Z",
+			"date": "03-20-2013",
 			"age": 7
 		},
 		"picture": {
@@ -64,7 +69,7 @@ const data = [
 		},
 		"email": "lawrence.martin@example.com",
 		"registered": {
-			"date": "2007-06-10T22:54:34.597Z",
+			"date": "06-10-2007",
 			"age": 13
 		},
 		"picture": {
@@ -80,7 +85,7 @@ const data = [
 		},
 		"email": "stacey.wells@example.com",
 		"registered": {
-			"date": "2004-09-22T23:51:14.756Z",
+			"date": "09-22-2004",
 			"age": 16
 		},
 		"picture": {
@@ -96,7 +101,7 @@ const data = [
 		},
 		"email": "terrance.newman@example.com",
 		"registered": {
-			"date": "2007-06-28T22:47:55.943Z",
+			"date": "06-28-2007",
 			"age": 13
 		},
 		"picture": {
@@ -112,7 +117,7 @@ const data = [
 		},
 		"email": "morris.burton@example.com",
 		"registered": {
-			"date": "2016-02-09T01:59:20.212Z",
+			"date": "02-09-2016",
 			"age": 4
 		},
 		"picture": {
@@ -128,7 +133,7 @@ const data = [
 		},
 		"email": "terra.franklin@example.com",
 		"registered": {
-			"date": "2008-12-24T08:17:39.173Z",
+			"date": "12-24-2008",
 			"age": 12
 		},
 		"picture": {
@@ -144,7 +149,7 @@ const data = [
 		},
 		"email": "ted.bradley@example.com",
 		"registered": {
-			"date": "2017-11-29T14:26:08.753Z",
+			"date": "11-29-2017",
 			"age": 3
 		},
 		"picture": {
@@ -160,7 +165,7 @@ const data = [
 		},
 		"email": "celina.griffin@example.com",
 		"registered": {
-			"date": "2006-07-02T20:52:10.045Z",
+			"date": "07-02-2006",
 			"age": 14
 		},
 		"picture": {
@@ -176,7 +181,7 @@ const data = [
 		},
 		"email": "duane.soto@example.com",
 		"registered": {
-			"date": "2002-09-15T06:52:34.938Z",
+			"date": "09-15-2002",
 			"age": 18
 		},
 		"picture": {
@@ -192,7 +197,7 @@ const data = [
 		},
 		"email": "ray.vargas@example.com",
 		"registered": {
-			"date": "2007-12-03T23:14:00.943Z",
+			"date": "12-03-2007",
 			"age": 13
 		},
 		"picture": {
@@ -208,7 +213,7 @@ const data = [
 		},
 		"email": "douglas.torres@example.com",
 		"registered": {
-			"date": "2011-11-06T03:20:28.412Z",
+			"date": "11-06-2011",
 			"age": 9
 		},
 		"picture": {
@@ -224,7 +229,7 @@ const data = [
 		},
 		"email": "mia.snyder@example.com",
 		"registered": {
-			"date": "2014-05-27T17:00:53.643Z",
+			"date": "05-27-2014",
 			"age": 6
 		},
 		"picture": {
@@ -240,7 +245,7 @@ const data = [
 		},
 		"email": "mario.freeman@example.com",
 		"registered": {
-			"date": "2012-02-14T17:05:33.490Z",
+			"date": "02-14-2012",
 			"age": 8
 		},
 		"picture": {
@@ -256,7 +261,7 @@ const data = [
 		},
 		"email": "herman.griffin@example.com",
 		"registered": {
-			"date": "2009-11-04T04:11:46.511Z",
+			"date": "11-04-2009",
 			"age": 11
 		},
 		"picture": {
@@ -272,7 +277,7 @@ const data = [
 		},
 		"email": "marian.williamson@example.com",
 		"registered": {
-			"date": "2010-02-14T20:22:27.272Z",
+			"date": "02-14-2010",
 			"age": 10
 		},
 		"picture": {
@@ -288,7 +293,7 @@ const data = [
 		},
 		"email": "victor.rodriquez@example.com",
 		"registered": {
-			"date": "2006-10-03T19:51:21.474Z",
+			"date": "10-03-2006",
 			"age": 14
 		},
 		"picture": {
@@ -304,7 +309,7 @@ const data = [
 		},
 		"email": "beverley.gregory@example.com",
 		"registered": {
-			"date": "2006-02-12T18:14:39.545Z",
+			"date": "02-12-2006",
 			"age": 14
 		},
 		"picture": {
@@ -320,7 +325,7 @@ const data = [
 		},
 		"email": "nellie.schmidt@example.com",
 		"registered": {
-			"date": "2011-10-28T22:26:35.012Z",
+			"date": "10-28-2011",
 			"age": 9
 		},
 		"picture": {
@@ -336,7 +341,7 @@ const data = [
 		},
 		"email": "carlos.gibson@example.com",
 		"registered": {
-			"date": "2014-08-30T23:26:32.304Z",
+			"date": "08-30-2014",
 			"age": 6
 		},
 		"picture": {
@@ -352,7 +357,7 @@ const data = [
 		},
 		"email": "kevin.hamilton@example.com",
 		"registered": {
-			"date": "2004-12-26T12:50:32.419Z",
+			"date": "12-26-2004",
 			"age": 16
 		},
 		"picture": {
@@ -368,7 +373,7 @@ const data = [
 		},
 		"email": "flenn.torres@example.com",
 		"registered": {
-			"date": "2011-03-09T08:58:59.687Z",
+			"date": "03-09-2011",
 			"age": 9
 		},
 		"picture": {
@@ -384,7 +389,7 @@ const data = [
 		},
 		"email": "sue.kim@example.com",
 		"registered": {
-			"date": "2011-06-20T11:00:57.292Z",
+			"date": "06-20-2011",
 			"age": 9
 		},
 		"picture": {
@@ -400,7 +405,7 @@ const data = [
 		},
 		"email": "bella.fields@example.com",
 		"registered": {
-			"date": "2009-05-08T08:21:03.535Z",
+			"date": "05-08-2009",
 			"age": 11
 		},
 		"picture": {
@@ -416,7 +421,7 @@ const data = [
 		},
 		"email": "valerie.west@example.com",
 		"registered": {
-			"date": "2006-05-18T01:36:25.924Z",
+			"date": "05-18-2006",
 			"age": 14
 		},
 		"picture": {
@@ -432,7 +437,7 @@ const data = [
 		},
 		"email": "douglas.pearson@example.com",
 		"registered": {
-			"date": "2005-07-18T19:25:28.539Z",
+			"date": "07-18-2005",
 			"age": 15
 		},
 		"picture": {
@@ -448,7 +453,7 @@ const data = [
 		},
 		"email": "dolores.daniels@example.com",
 		"registered": {
-			"date": "2019-02-22T11:30:51.714Z",
+			"date": "02-22-2019",
 			"age": 1
 		},
 		"picture": {
@@ -464,7 +469,7 @@ const data = [
 		},
 		"email": "billie.knight@example.com",
 		"registered": {
-			"date": "2010-02-16T10:51:21.170Z",
+			"date": "02-16-2010",
 			"age": 10
 		},
 		"picture": {
@@ -480,7 +485,7 @@ const data = [
 		},
 		"email": "luke.neal@example.com",
 		"registered": {
-			"date": "2015-06-29T12:12:37.235Z",
+			"date": "06-29-2015",
 			"age": 5
 		},
 		"picture": {
@@ -496,7 +501,7 @@ const data = [
 		},
 		"email": "billy.gray@example.com",
 		"registered": {
-			"date": "2007-07-09T09:05:34.696Z",
+			"date": "07-09-2007",
 			"age": 13
 		},
 		"picture": {
@@ -512,7 +517,7 @@ const data = [
 		},
 		"email": "roy.evans@example.com",
 		"registered": {
-			"date": "2010-10-24T17:48:56.923Z",
+			"date": "10-24-2010",
 			"age": 10
 		},
 		"picture": {
@@ -528,7 +533,7 @@ const data = [
 		},
 		"email": "shane.baker@example.com",
 		"registered": {
-			"date": "2011-12-28T16:08:35.370Z",
+			"date": "12-28-2011",
 			"age": 9
 		},
 		"picture": {
@@ -544,7 +549,7 @@ const data = [
 		},
 		"email": "tom.sims@example.com",
 		"registered": {
-			"date": "2015-05-07T21:56:31.788Z",
+			"date": "05-07-2015",
 			"age": 5
 		},
 		"picture": {
@@ -560,7 +565,7 @@ const data = [
 		},
 		"email": "travis.brooks@example.com",
 		"registered": {
-			"date": "2008-11-23T12:19:36.734Z",
+			"date": "11-23-2008",
 			"age": 12
 		},
 		"picture": {
@@ -576,7 +581,7 @@ const data = [
 		},
 		"email": "karl.shaw@example.com",
 		"registered": {
-			"date": "2007-07-16T12:52:45.439Z",
+			"date": "07-16-2007",
 			"age": 13
 		},
 		"picture": {
@@ -592,7 +597,7 @@ const data = [
 		},
 		"email": "anthony.miller@example.com",
 		"registered": {
-			"date": "2004-03-31T10:53:11.156Z",
+			"date": "03-31-2004",
 			"age": 16
 		},
 		"picture": {
@@ -608,7 +613,7 @@ const data = [
 		},
 		"email": "elizabeth.jimenez@example.com",
 		"registered": {
-			"date": "2003-06-08T03:57:11.011Z",
+			"date": "06-08-2003",
 			"age": 17
 		},
 		"picture": {
@@ -624,7 +629,7 @@ const data = [
 		},
 		"email": "marc.payne@example.com",
 		"registered": {
-			"date": "2004-05-22T02:09:35.413Z",
+			"date": "05-22-2004",
 			"age": 16
 		},
 		"picture": {
@@ -640,7 +645,7 @@ const data = [
 		},
 		"email": "jon.berry@example.com",
 		"registered": {
-			"date": "2016-10-10T10:07:05.154Z",
+			"date": "10-10-2016",
 			"age": 4
 		},
 		"picture": {
@@ -656,7 +661,7 @@ const data = [
 		},
 		"email": "natalie.arnold@example.com",
 		"registered": {
-			"date": "2019-06-25T18:23:24.775Z",
+			"date": "06-25-2019",
 			"age": 1
 		},
 		"picture": {
@@ -672,7 +677,7 @@ const data = [
 		},
 		"email": "allen.thompson@example.com",
 		"registered": {
-			"date": "2010-08-14T06:26:27.502Z",
+			"date": "08-14-2010",
 			"age": 10
 		},
 		"picture": {
@@ -682,24 +687,3 @@ const data = [
 		}
 	}
 ];
-
-
-
-/**
- Format date function - Get date from student object and return short date format
- @param date - Date returned from student object .registered.date
- @return formatted Date string
-*/
-const formatDate = date => {
-
-	// Format date to add leading zero days and months that are less than 10
-	const addZero = n => (n < 10) ? `0${n}` : n;
-
-	// Create new date object or log out error message
-	const dateObj = (date) ? 
-					new Date(date) : 
-					console.error(`Problem with date parameter: `, date);
-
-	// Return formatted date
-	return `${addZero(dateObj.getMonth() + 1)}/${addZero(dateObj.getDate())}/${dateObj.getFullYear().toString().slice(-2)}`;
-}
