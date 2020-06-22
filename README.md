@@ -88,11 +88,11 @@
       <!-- TODO add link to the docs for insertAdjacentHTML in Resources -->
     * Insert the elements you have created to the `UL` element with a class of `student-list`. The insertAdjacentHTML method and `beforeend` option works well for this.
 * **Pro Tip:** If you call this function in the early stages of building the application, you’ll be able to use console.log statements and the Chrome Dev Tools console to test and check that variables, values and indexes are working the way you expect. Don't forget to use the `data` variable and page number as arguments when you call the function!
-* **Project Warm Ups:** Creating and using functions, and selecting and manipulating sections of a list can feel confusing at first.  For some helpful practice, check out the [List Section Selection](https://teamtreehouse.com/library/fsjs-project-warm-up-list-section-selection) and [What's the Deal with Functions](https://teamtreehouse.com/library/fsjs-project-warm-up-whats-the-deal-with-functions) project warm-ups.
+* **Project Warm Ups:** Creating and using functions, and selecting and manipulating sections of a list can feel confusing at first. For some helpful practice, check out the [List Section Selection](https://teamtreehouse.com/library/fsjs-project-warm-up-list-section-selection) and [What's the Deal with Functions](https://teamtreehouse.com/library/fsjs-project-warm-up-whats-the-deal-with-functions) project warm-ups.
 
 
 <!-- step -->
-#### Add Pagination Links
+#### Add Pagination Buttons
 
 * Create a function that creates and appends functioning pagination buttons.
 * This function should accept a single `list` parameter to represent student data that will be passed as an argument when the function is called.
@@ -103,28 +103,18 @@
   * Loop over the variable for the number of pages needed that you created earlier.
   * Inside the loop:
     <!-- TODO include line numbers for example code once starter files are done -->
-    * Create the DOM elements needed to display the pagination link as you iterate over the number of pages. See the comments in the index.html file for an example of what this element should look like.
-    * Insert the elements you have created to the `UL` element with a class of `link-list`. The insertAdjacentHTML method and `beforeend` option works well for this.
-  * Select the first pagination link and give it a class name of `active`.
-
-  <!-- TODO below -->
-  * Create and append the DOM elements for the pagination links.
-    * Use lines 119-137 in the `examples/example-meets.html` file as your template.
-    * Pay close attention to how elements are nested, any necessary class names or other element attributes, and where your additions should be appended.
-  * You should end up with:
-    * A container `DIV` element with a class name of “pagination”, and appended to the `div` element with the class name of `page`.
-    * A nested  `UL` element containing one `LI` element for every ten students in the list.
-      * **Pro Tip:** You can divide `list.length` by the max number of items per page to figure out how many pages are needed, and you can use a loop that iterates that many times to create the correct number of `LI` elements.
-    * Each `LI` element should contain an `A` element with an `href` attribute of `#`, and text set to the page number each link will show.  First link is `1`.  Second link is `2`.  And so on.
-      * **Pro Tip:** The loop index can be helpful in setting the text of the pagination links.
-  * Add the `active` class name to the first pagination link initially.  
-  * Add a “click” event listener to each `A` element.  A loop can be helpful here.
-  * When a pagination link is clicked:
-    * The `active` class name should be removed from all pagination links.  A loop can be helpful for this step.
-    * The `active` class name should be added to the link that was just clicked.  The target property of the event object should be useful here.
-    * The function to show a page should be called, passing in as arguments, the global variable for the list items, and the page number that should be shown.  The text content of the `A` element that was just clicked can be helpful here.
-* **Note:** Your program needs to work for any number of list items, so your solution needs to be dynamic. You can test that your solution works for any size list by opening the `examples/44students.html` and `examples/64 students.html` files, and linking your JS file.
-* **Project Warm Ups:** DOM manipulation and updating an indication that a button is active can be tricky at first.  For some helpful practice, check out the project Warm Up [Fun DOM Manipulation](https://teamtreehouse.com/library/fsjs-project-warm-up-fun-dom-manipulation) and [Where's the Action](https://teamtreehouse.com/library/fsjs-project-warm-up-wheres-the-action).
+    * Create the DOM elements needed to display the pagination button as you iterate over the number of pages. See the comments in the index.html file for an example of what this element should look like.
+    * Insert the element you have created to the `UL` element with a class of `link-list`. The insertAdjacentHTML method and `beforeend` option works well for this.
+  * Select the first pagination button and give it a class name of `active`.
+  * Create an event listener to listen for clicks on the `UL` element that contains the pagination buttons that you created above.
+  * Inside this event listener:
+    * If the click target is a pagination button:
+      * Remove the `active` class from any other pagination button.
+      * Add the `active` class to the pagination button that was just clicked.
+      * Call the `showPage` function passing the `list` parameter and the page number that should be shown as arguments.
+        * **Pro Tip:** The text content of the clicked pagination button will contain the page number you want to display.
+* **Pro Tip:** If you call this function in the early stages of building the application, you’ll be able to use console.log statements and the Chrome Dev Tools console to test and check that variables, event listener, and other functionality is working the way you expect. Don't forget to use the `data` variable as an argument when you call the function!
+* **Project Warm Ups:** DOM manipulation and creating pagination buttons can be tricky at first. For some helpful practice, check out the [Fun DOM Manipulation](https://teamtreehouse.com/library/fsjs-project-warm-up-fun-dom-manipulation) and [Where's the Action](https://teamtreehouse.com/library/fsjs-project-warm-up-wheres-the-action) project warm-ups.
 
 
 <!-- step -->
