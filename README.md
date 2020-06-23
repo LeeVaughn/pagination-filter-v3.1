@@ -2,32 +2,34 @@
 
 ## Prerequisites ("Before You Start")
 <!-- step -->
-#### Review the policy on [Reusing Code in a Techdegree project](https://teamtreehouse.com/library/reusing-code-in-a-techdegree-project).
+#### Complete the Unit 2 Curriculum
+
+The courses, workshops, and instruction steps in each unit are designed to help prepare you for completing the project. You are encouraged to take your time reviewing this material, pausing the videos as needed so you can code alongside the instructor.
 
 
 <!-- step -->
-#### GitHub
+#### Create a GitHub Repository
 
-* Create a new repo for this project on [GitHub](https://github.com/).
-* Create a `README.md` file for your repo. Add details about your project to the `README`, for example:
-  * A description of the project in your own words.
-  * The skills, techniques, and process used to complete the project.
-  * If you’ve attempted to earn an “Exceeds Expectations” grade, list the “Extra Credit” features you added.
-* If you need a reminder on how to use GitHub and GitHub Desktop app, please refer back to the workshop, [Share Your Projects with GitHub Desktop](https://teamtreehouse.com/library/share-your-techdegree-projects-with-github-desktop).
+Each Techdegree project should have its own GitHub repository, which you will use to submit your finished project. A project repo should only contain the project starter files plus any code and/or files needed to make the project run. If you need a reminder on how to use GitHub and GitHub Desktop app, please refer back to the [GitHub Desktop Reference](https://teamtreehouse.com/library/github-desktop-reference-2) document.
+
+<div class="secondary box">
+  <strong>Pro Tip:</strong> A preferred developer workflow is to create a new repo when you begin a project and then make regular updates as you make important changes or at key stages of development, like after adding new files or implementing new functionality.  
+</div>
 
 
 <!-- step -->
 #### Download the Project Files
 
-* You are provided with several starter files:
-  * An `index.html` file contains the initial HTML markup.  ** Do not make any changes to this file.**
-  * Two CSS files, `design.css` and `reset.css` inside the `css` folder. These files contain specific styling required to make the pagination features and list look good.
-  * A `script.js` file in the `js` folder. You'll add code to this file. We've provided code comments to get you started.
-  * A `data.js` file, which contains the data you will use for this project. This file includes a `data` variable, which you can use in the `script.js` file to access the student data.
-  <!-- TODO the section below will still need to be updated once the starter files are set up -->
-  * Example HTML files in the `examples` folder:
-    * The `example-exceeds.html` and `example-meets.html` files demonstrate what a meets and exceeds project will look like in the browser.
-    * The `44students.html` and `64 students.html` files allow you to test your solution against lists of varying length.
+Download the project files in the “**Download files**” section on the right-hand side of this page, just above “**Project Resources**”. Once unzipped, the file and folder structure of the project directory should not be changed. The files are linked together in a way that depends upon the current directory structure. Making changes to that structure could affect how the app works and disconnect the CSS and/or JavaScript from the HTML.
+
+**The files:**
+<div class="secondary box">
+  <ul>
+    <li>The <code>index.html</code> file contains the initial HTML markup. <strong>Don’t change anything in this file!</strong></li>
+    <li>The <code>css</code> folder contains the styles for the project. You won’t need to change anything these files.</li> 
+    <li>The <code>js</code> folder contains a <code>script.js</code> and a <code>data.js</code> file. The <code>script.js</code> file is where you will write your code for this project. The <code>data.js</code> file contains the data you will use for this project and includes a <code>data</code> variable, which you can use in the <code>script.js</code> file to access the student data.</li>
+  </ul>
+</div>
 
 
 <!-- step -->
