@@ -147,7 +147,7 @@ function appendPageLinks(list) {
    // add click handler to link container
       // use event delegation to make only BUTTONS trigger click handler
       // create variable to target '.link-list button' elements
-      //? since only one button will ever have the class of active you can just use querySelector for this - Lee
+      //? since only one button should ever have the class of "active" you can just use querySelector for this - Lee
       // loop over buttons to remove active className from all buttons
       // after loop add active className to clicked button
       // call showPage passing in list parameter and textContent of clicked button
