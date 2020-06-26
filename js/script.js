@@ -100,8 +100,8 @@ function showPage(list, page) {
  Append page links function - Create and append pagination links for list
  @param list - List of students to be paginated
 */
-//? since we are no longer appending, we might want to change the name of this function to addPageLinks or addPagination
-function appendPageLinks(list) {
+// changed the name of this function to make it more reflective of what the function currently does
+function addPagination(list) {
    // create variable for number of pages needed
    const numOfPages = Math.ceil(list.length / 10)
    // create variable to select link-list element
@@ -173,5 +173,5 @@ function appendSearch() {
 }
 
 showPage(data, 1);
-appendPageLinks(data);
+addPagination(data);
 appendSearch();
