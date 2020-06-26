@@ -28,6 +28,7 @@ Download the project files in the “**Download files**” section on the right-
     <li>The <code>index.html</code> file contains the initial HTML markup. <strong>Don’t change anything in this file!</strong></li>
     <li>The <code>css</code> folder contains the styles for the project. You won’t need to change anything these files.</li> 
     <li>The <code>js</code> folder contains a <code>script.js</code> and a <code>data.js</code> file. The <code>script.js</code> file is where you will write your code for this project. The <code>data.js</code> file contains the data you will use for this project and includes a <code>data</code> variable, which you can use in the <code>script.js</code> file to access the student data.</li>
+    <li>The <code>img</code> folder contains a search icon that will be used in the Exceeds portion of the project</li>
   </ul>
 </div>
 
