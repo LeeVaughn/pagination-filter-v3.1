@@ -49,23 +49,15 @@ Writing code for a project is easier and more enjoyable if you divide the projec
   * Review the unit material again.
   * Use your Google skills to find the information you need. If you aren't finding the information you need, try rephrasing your search.
   * Reach out to your Slack team.
-    * **Pro Tip:** A good “Help!” post in Slack begins with a friendly greeting, details any important info related to the problem you’re having, what you’ve tried so far to fix it, and most importantly, a link to your GitHub repository.
+    <div class="secondary box">
+      <strong>Pro Tip:</strong> A good “Help!” post in Slack begins with a friendly greeting, details any important info related to the problem you’re having, what you’ve tried so far to fix it, and most importantly, a link to your GitHub repository.  
+    </div>
 
 
 <!-- step -->
 #### No Snippets, Plugins or Libraries, including jQuery
 
 * Avoid using any libraries, plugins, or code snippets for any aspect of this project. All of the code for this project should be your own and in plain JavaScript, often referred to as “Vanilla JavaScript”.
-
-
-<!-- step -->
-#### Create your Global Variables
-
-<!-- ? Not sure we need this section as the project can be completed without any global variables -->
-* This project can be completed with just two global variables
-  * Create a variable to store the student `list item` elements in the student list.  
-    * **Pro Tip:** Log out the variable storing the list to ensure it equals the list of `li` items and not the container of the `li` elements.
-  * Create a variable to store the number of items to show on each “page”, which for this project, is 10.
 
 
 <!-- step -->
@@ -86,10 +78,15 @@ Writing code for a project is easier and more enjoyable if you divide the projec
     * Write a conditional statement that checks if the current index (`i`) is greater than or equal to the `start index` variable **and** less than the `end index` variable.
     * Inside that conditional:
       * Create the DOM elements needed to display the information for each matching student as you iterate over the `list` parameter. See lines 36-45 in the `index.html` file for an example of what the final version of these elements should look like.
-      * **Pro Tip** Because you will need to create multiple elements to display the information for each student, you might consider using a template literal for this.
+      <div class="secondary box">
+        <strong>Pro Tip:</strong> Because you will need to create multiple elements to display the information for each student, you might consider using a template literal for this. 
+      </div>
       <!-- TODO add link to the docs for insertAdjacentHTML in Resources -->
     * Insert the elements you have created to the `student-list` variable you created earlier. The insertAdjacentHTML method and `beforeend` option works well for this.
-* **Pro Tip:** If you call this function in the early stages of building the application, you’ll be able to use console.log statements and the Chrome Dev Tools console to test and check that variables, values and indexes are working the way you expect. Don't forget to use the `data` variable and page number as arguments when you call the function!
+<div class="secondary box">
+  <strong>Pro Tip:</strong> If you call this function in the early stages of building the application, you’ll be able to use console.log statements and the Chrome Dev Tools console to test and check that variables, values and indexes are working the way you expect. Don't forget to use the <code>data</code> variable and page number as arguments when you call the function! 
+</div>
+<!--TODO double check to make sure the section below formats properly in Admin  -->
 * **Project Warm Ups:** Creating and using functions, and selecting and manipulating sections of a list can feel confusing at first. For some helpful practice, check out the [List Section Selection](https://teamtreehouse.com/library/fsjs-project-warm-up-list-section-selection) and [What's the Deal with Functions](https://teamtreehouse.com/library/fsjs-project-warm-up-whats-the-deal-with-functions) project warm-ups.
 
 
@@ -113,8 +110,13 @@ Writing code for a project is easier and more enjoyable if you divide the projec
       * Remove the `active` class from any other pagination button.
       * Add the `active` class to the pagination button that was just clicked.
       * Call the `showPage` function passing the `list` parameter and the page number to display as arguments.
-        * **Pro Tip:** The text content of the clicked pagination button will contain the page number you want to display.
-* **Pro Tip:** If you call this function in the early stages of building the application, you’ll be able to use console.log statements and the Chrome Dev Tools console to test and check that variables, event listener, and other functionality is working the way you expect. Don't forget to use the `data` variable as an argument when you call the function!
+        <div class="secondary box">
+          <strong>Pro Tip:</strong> The text content of the clicked pagination button will contain the page number you want to display. 
+        </div>
+<div class="secondary box">
+  <strong>Pro Tip:</strong> If you call this function in the early stages of building the application, you’ll be able to use console.log statements and the Chrome Dev Tools console to test and check that variables, event listener, and other functionality is working the way you expect. Don't forget to use the <code>data</code> variable as an argument when you call the function! 
+</div>
+<!--TODO double check to make sure the section below formats properly in Admin  -->
 * **Project Warm Ups:** DOM manipulation and creating pagination buttons can be tricky at first. For some helpful practice, check out the [Fun DOM Manipulation](https://teamtreehouse.com/library/fsjs-project-warm-up-fun-dom-manipulation) and [Where's the Action](https://teamtreehouse.com/library/fsjs-project-warm-up-wheres-the-action) project warm-ups.
 
 
@@ -123,7 +125,9 @@ Writing code for a project is easier and more enjoyable if you divide the projec
 
 * Call the first function you created to display a “page”, passing in the `data` variable and `1` as arguments.
 * Call the second function you created to add pagination buttons, passing the `data` variable as an argument.
-* **Note:** You may have already called these functions in your app if you were testing things as you went along.
+<div class="secondary box">
+  <strong>Note:</strong> You may have already called these functions in your app if you were testing things as you went along.
+</div>
 
 
 <!-- step -->
@@ -172,27 +176,34 @@ Before you submit your project, check off each item in the project submissions c
 <!-- step -->
 #### Add Functionality to the Search Component
 
-* When the "Search" icon is clicked, the student data is filtered so that only students whose name matches the search query are shown. For example, if the name `Bill` is typed into the search field, only students with "Bill" in the name should be shown. If the letter `S` is typed in, only students with an "S" in the name should be shown.
-* **Pro Tip:** To improve the functionality and improve the user experience, consider adding a keyup event listener to the search input so that the list filters in real time as the user types. This should be in addition to making the search button clickable since pasting text into the search bar might not trigger the keyup event.
-<!--* step number below will need to be changed if we remove global variable section -->
-* **Pro Tip:** Remember you have already created a function to show 10 students per page in Step 4. All you really need to do here is create a new student list based on the search matches and then use that new list as an argument when calling the already existing function to display the students.
+* When the "Search" icon is clicked, the student data is filtered so that only students whose name matches the search query are shown. For example, if the name `Bill` is typed into the search field, only students with “Bill” in the name should be shown. If the letter `S` is typed in, only students with an “S” in the name should be shown.
+<div class="secondary box">
+  <strong>Pro Tip:</strong> To improve the functionality and improve the user experience, consider adding a keyup event listener to the search input so that the list filters in real time as the user types. This should be in addition to making the search button clickable since pasting text into the search bar might not trigger the keyup event. 
+</div>
+<div class="secondary box">
+  <strong>Pro Tip:</strong> Remember you have already created a function to show 10 students per page in Step 3. All you really need to do here is create a new student list based on the search matches and then use that new list as an argument when calling the already existing function to display the students.
+</div>
+<!--TODO double check to make sure the section below formats properly in Admin  -->
 * **Project Warm Up:** Configuring a search feature might seem complicated at first but it's can actually be accomplished with just a few steps. For some helpful practice, check out the [Simple Search](https://teamtreehouse.com/library/fsjs-project-warm-up-simple-search) project warm-up.
 
 
 <!-- step -->
 #### Add Pagination for Search Results
 
-* The pagination buttons should change based on the number of matches to the search. For example: if 10 or fewer matches are found, there should be 0 or 1 pagination button. If 22 matches are found, there should be 3 pagination buttons.
+* The pagination buttons should change based on the number of matches to the search. For example: if 10 or fewer matches are found, there should be 0 or 1 pagination buttons. If 22 matches are found, there should be 3 pagination buttons.
 * Clicking on a pagination button should display the corresponding matching students for that page.
-<!--* step number below will need to be changed if we remove global variable section -->
-* **Pro Tip:** Remember you already created a function to create pagination buttons in Step 5. Use this existing pagination function along with the matching student list you created in the previous step as an argument to create pagination for your search results. 
+<div class="secondary box">
+  <strong>Pro Tip:</strong> Remember you already created a function to create pagination buttons in Step 4. Use this existing pagination function along with the matching student list you created in the previous step as an argument to create pagination for your search results.
+</div> 
 
 
 <!-- step -->
 #### Handle No Search Matches
 
-* If no matches are found for a search, display a "No results found" type message on the page.
-* **Note:** Don't use the built in `alert()` method for this. The "No results found" message should be printed to the page. 
+* If no matches are found for a search, display a “No results found” type message on the page.
+<div class="secondary box">
+  <strong>Note:</strong> Don't use the built in <code>alert()</code> method for this. The "No results found" message should be printed to the page.
+</div>
 
 
 ***
