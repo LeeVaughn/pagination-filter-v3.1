@@ -77,7 +77,19 @@ Writing code for a project is easier and more enjoyable if you divide the projec
   * Inside the loop:
     * Write a conditional statement that checks if the current index (`i`) is greater than or equal to the `start index` variable **and** less than the `end index` variable.
     * Inside that conditional:
-      * Create the DOM elements needed to display the information for each matching student as you iterate over the `list` parameter. See lines 36-45 in the `index.html` file for an example of what the final version of these elements should look like.
+      * Create the DOM elements needed to display the information for each matching student as you iterate over the `list` parameter. Here is an example of what the the final version of these elements should look like:
+      ```html
+        <li class="student-item cf">
+          <div class="student-details">
+            <img class="avatar" src="https://randomuser.me/api/portraits/women/25.jpg" alt="Profile Picture">
+            <h3>Ethel Dean</h3>
+            <span class="email">ethel.dean@example.com</span>
+          </div>
+          <div class="joined-details">
+            <span class="date">Joined 12-15-2005</span>
+          </div>
+        </li>
+        ```
       <div class="secondary box">
         <strong>Pro Tip:</strong> Because you will need to create multiple elements to display the information for each student, you might consider using a template literal for this. 
       </div>
@@ -101,7 +113,12 @@ Writing code for a project is easier and more enjoyable if you divide the projec
   * Use the innerHTML property set the HTML content of the `link-list` variable you just created to an empty string. This will remove any pagination buttons that might have previously been displayed.
   * Loop over the variable for the number of pages needed that you created earlier.
   * Inside the loop:
-    * Create the DOM elements needed to display the pagination button as you iterate over the number of pages. See the lines 58-63 in the `index.html` file for an example of what these elements should look like.
+    * Create the DOM elements needed to display the pagination button as you iterate over the number of pages. Here is an example of what the the final version of these elements should look like:
+    ```html
+    <li>
+      <button type="button">1</button>
+    </li>
+    ```
     * Insert the elements you have created to the `link-list` variable you created earlier. The insertAdjacentHTML method and `beforeend` option works well for this.
   * Select the first pagination button and give it a class name of `active`.
   * Create an event listener to listen for clicks on the `link-list` variable that you created earlier.
@@ -170,7 +187,13 @@ Before you submit your project, check off each item in the project submissions c
 <!-- step -->
 #### Add a Search Component
 
-* Dynamically create and add a search bar. Avoid making any changes in the `index.html` file and instead use your JavaScript skills for this. Check out lines 21-24 of the `index.html` file for an example of what the elements for the search feature should look like.
+* Dynamically create and add a search bar. Avoid making any changes in the `index.html` file and instead use your JavaScript skills for this. Here is an example of what the the final version of these elements should look like:
+```html
+<label for="search" class="student-search">
+  <input id="search" placeholder="Search by name...">
+  <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>
+</label>
+```
 
 
 <!-- step -->
