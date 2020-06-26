@@ -4,24 +4,6 @@ New FSJS project 2 - List Pagination and Filter - v2 - Data version
 
 "use strict";
 
-// IMPORTANT NOTE:
-   // The comments below are something of a jumping off point for the new instructions and/or project walk-through
-   // Comments in parens are notes to Mods and SSSs who are testing this out.
-
-// Variable to hold list data - (this variable will be provided for student, I think)
-//? student could also just use "data" directly to access the existing data variable from data.js - Lee
-const dataList = data;
-
-//? other than the data, not sure there is any need for global variables here and these should instead be created in functions - Lee
-// Need to create some variables here to:
-   // target '.student-list' element
-   // target '.link-list' element
-   // target '.header' element - if going for exceeds and adding search
-
-   // set the max items per page, which is 9 for this project
-
-
-/**
  Show page function - shows the selected page of students
  @param list - List of students to be paginated
  @param page - Page number to be shown
