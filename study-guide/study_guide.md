@@ -6,6 +6,10 @@ This Study Guide is a list of Treehouse videos, Practice Sessions, Project Warm-
 ---
 
 ### Getting Started with the Project Files
+<!--TODO insert link to starter files below -->
+* **[Project Starter Files]()** - Treehouse Resource
+* **[GitHub Desktop Reference](https://teamtreehouse.com/library/github-desktop-reference-2)** - Treehouse Instruction
+* **[Preview files in the Browser](https://teamtreehouse.com/library/preview-files-in-a-browser)** - Treehouse Video
 
 ---
 
