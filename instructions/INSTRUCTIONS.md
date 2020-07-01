@@ -13,6 +13,10 @@ The courses, workshops, and instruction steps in each unit are designed to help 
 Each Techdegree project should have its own GitHub repository, which you will use to submit your finished project. A project repo should only contain the project starter files plus any code and/or files needed to make the project run. If you need a reminder on how to use GitHub and GitHub Desktop app, please refer back to the [GitHub Desktop Reference](https://teamtreehouse.com/library/github-desktop-reference-2) document.
 
 <div class="secondary box">
+  <strong>Note:</strong> Consider making your repository name something descriptive of the app and what it does. Repo names like "random-quote-generator" or "react-photo-gallery" are more impactful and professional than something generic like "fsjs-project1" or "techdegree-project-7". 
+</div>
+
+<div class="secondary box">
   <strong>Pro Tip:</strong> A preferred developer workflow is to create a new repo when you begin a project and then make regular updates as you make important changes or at key stages of development, like after adding new files or implementing new functionality.  
 </div>
 
