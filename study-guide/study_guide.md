@@ -1,11 +1,12 @@
-<!--TODO Project name will need to be sync'd across all resources -->
+<!--TODO Project name will need to be sync'd across all resources, insert walkthrough link -->
 ## Project 2 - Pagination
 
-This Study Guide is a list of Treehouse videos, Practice Sessions, Project Warm-ups, and other resources related to the different steps in the Instruction tab for this project. If you get stuck while working on this project, reference this Study Guide and review the related resources to try and find a solution.
+This Study Guide is a list of Treehouse videos, Practice Sessions, Project Warm Ups, and other resources related to the different steps in the Instruction tab for this project. If you get stuck while working on this project, reference this Study Guide and review the related resources to try and find a solution. For more detailed guidance, check out the **[Project 2 Walkthrough]()**.
 
 ---
 
 ### Getting Started with the Project Files
+
 <!--TODO insert link to starter files below -->
 * **[Project Starter Files]()** - Treehouse Resource
 * **[GitHub Desktop Reference](https://teamtreehouse.com/library/github-desktop-reference-2)** - Treehouse Instruction
@@ -58,6 +59,6 @@ This Study Guide is a list of Treehouse videos, Practice Sessions, Project Warm-
 * **[Code Comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Comments)** - MDN Documentation
 * **[JavaScript Style Guide and Coding Conventions](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/JavaScript)** - MDN Documentation
 * **[Introduction to cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Introduction)** - MDN Documentation
-* **[Strategies for carrying out testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Testing_strategies)** - MDN doc
+* **[Strategies for carrying out testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Testing_strategies)** - MDN Documentation
 
 ---
