@@ -49,12 +49,15 @@ This Study Guide is a list of Treehouse videos, Practice Sessions, Project Warm-
 
 ### Call Functions
 
+* **[Create and Call a Function](https://teamtreehouse.com/library/create-and-call-a-function)** - Treehouse Video
+
 ---
 
 ### Finishing the Project
 
----
-
-### Before Submitting the Project
+* **[Code Comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Comments)** - MDN Documentation
+* **[JavaScript Style Guide and Coding Conventions](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/JavaScript)** - MDN Documentation
+* **[Introduction to cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Introduction)** - MDN Documentation
+* **[Strategies for carrying out testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Testing_strategies)** - MDN doc
 
 ---
