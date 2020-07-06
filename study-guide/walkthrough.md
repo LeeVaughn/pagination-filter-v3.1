@@ -5,30 +5,17 @@ This Walkthrough is a step by step guide to the different sections in the Instru
 ---
 
 
-## Getting Started
+## Before You Start
 
-### 1. Complete the Unit 2 Curriculum
+Building a project can be a challenging task but it is made easier by proper planning and organization. Before you write your first line of code, be sure you have completed all of the steps on the checklist below.
 
----
+<input type="checkbox"> Complete all Unit 2 curriculum.
 
+<input type="checkbox"> Create a GitHub repository for your project.
 
-### 2. Create a GitHub Repository
+<input type="checkbox"> Download the starter files for the project and push them to your GitHub repo. Review these files to familiarize yourself with them.
 
----
-
-
-### 3. Download the Project Files
-
----
-
-
-### 4. Read the Instructions Tab
-
----
-
-
-<!--? could this all be bundled into a checklist? like the P1 Walkthrough -->
-
+<input type="checkbox"> Review the steps in the Instruction tab for the project. Consider what each step does and how the different parts of the application work together.
 
 ---
 
