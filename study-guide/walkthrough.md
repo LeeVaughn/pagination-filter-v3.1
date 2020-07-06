@@ -35,36 +35,36 @@
 
 ## Instruction Walkthrough
 
-### Review Your Resources
+### 1. Review Your Resources
 
 ---
 
 
-### Getting Started with the Project Files
+### 2. Getting Started with the Project Files
 
 ---
 
 
-### Display a “page”
+### 3. Display a “page”
 
 ---
 
 
-### Add Pagination Buttons
+### 4. Add Pagination Buttons
 
 ---
 
 
-### Call Functions
+### 5. Call Functions
 
 ---
 
 
-### Finishing the Project
+### 6. Finishing the Project
 
 ---
 
 
-### Before Submitting the Project
+### 7. Before Submitting the Project
 
 ---
