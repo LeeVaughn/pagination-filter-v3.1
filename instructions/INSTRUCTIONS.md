@@ -38,7 +38,7 @@ Download the project files in the “**Download files**” section on the right-
 
 
 <!-- step -->
-#### Read the Instructions tab
+#### Read the Instructions Tab
 
 Writing code for a project is easier and more enjoyable if you divide the project into smaller, more manageable parts that you can program one at a time. The instructions in the Instructions tab divide the project into individual sections, which are further broken up into even smaller steps. Read through the complete list of instructions to understand how the individual sections come together to complete the project. Then start at the beginning of the instructions and work on things one step at a time, testing your code as you go.
   
