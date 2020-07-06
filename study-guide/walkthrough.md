@@ -1,6 +1,6 @@
-## Project 1 - Pagination
+## Project 2 - Pagination
 
-<!--TODO add walkthrough description here -->
+This Walkthrough is a step by step guide to the different sections in the Instruction tab for this project. It is meant to be a supplemental resource. For best results, you should try to build out the project on your own *before* consulting the Walkthrough. Work through each step in the Instruction tab on your own. If you get stuck, check out the resources in the Review Your Resources section of the Instructions like the [Study Guide](https://teamtreehouse.com/admin/instructions/4963), Project Warm-Ups, and Google. Then if you are still unable to make progress, reference the Walkthrough for additional details.
 
 ---
 
