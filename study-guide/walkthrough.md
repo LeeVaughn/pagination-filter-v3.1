@@ -35,14 +35,36 @@ If you haven't already, open up the project in your text editor. Now open the pr
 
 Now return to your text editor and check out the `data.json` file. This file contains a `data` variable, which is an array of objects. Each of these objects contains information on a student. We will be using this data in the `script.js` to display students and create pagination buttons.
 
-Now access the `script.js` file in your text editor. Let's start by adding a `console.log` statement to log out the `data` variable. This snippet of code should look like `console.log(data);`. Now return to your browser, refresh the page, and take a look at what logs out to the Dev Tools console. You should see an array containing 42 objects.
+Now access the `script.js` file in your text editor. Let's start by using the `console.log()` method to log out the `data` variable. This snippet of code should look like `console.log(data);`. Now return to your browser, refresh the page, and take a look at what logs out to the Dev Tools console. You should see an array containing 42 objects.
 
-Now that you know how to access the student data using the `data` variable, let's start building our application.
+Now that you know how to access the student information using the `data` variable, let's start building our application.
+
+For best results, we are going to take it one small step at a time, testing our code as we go.
 
 ---
 
 
 ### 3. Display a “page”
+
+We are going to start by creating a function that will display a page of ten students. We will name this function `showPage`. This function will take two parameters: `list`, and `page`. The `list` parameter will represent the array student data we are working with and `page` parameter will be the page number that we want to show.
+
+This is what your function should look like, including placholder comments for the functionality that we will be adding in this step.
+
+```javascript
+function showPage(list, page) {
+  // create two variables which will represent the index for the first and last student on the page
+
+  // select the element with a class of `student-list` and assign it to a variable
+
+  // set the innerHTML property of the variable you just created to an empty string
+
+  // loop over the length of the `list` parameter
+    // inside the loop create a conditional to display the proper students
+      // inside the conditional:
+        // create the elements needed to display the student information
+        // insert or append the above elements
+}
+```
 
 ---
 
