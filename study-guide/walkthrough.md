@@ -24,10 +24,20 @@ Building a project can be a challenging task but it is made easier by proper pla
 
 ### 1. Review Your Resources
 
+You will find a list of resources on the right side of the project page, just below the “**Download files**” section. Be sure to review these resources and become familiar with them before beginning the project.
+
 ---
 
 
 ### 2. Getting Started with the Project Files
+
+If you haven't already, open up the project in your text editor. Now open the project in Chrome and open up the Dev Tools console. If you don't remember how to open the project in a browser, check out this lesson for a refresher: [Preview Files in a Browser](https://teamtreehouse.com/library/preview-files-in-a-browser).
+
+Now return to your text editor and check out the `data.json` file. This file contains a `data` variable, which is an array of objects. Each of these objects contains information on a student. We will be using this data in the `script.js` to display students and create pagination buttons.
+
+Now access the `script.js` file in your text editor. Let's start by adding a `console.log` statement to log out the `data` variable. This snippet of code should look like `console.log(data);`. Now return to your browser, refresh the page, and take a look at what logs out to the Dev Tools console. You should see an array containing 42 objects.
+
+Now that you know how to access the student data using the `data` variable, let's start building our application.
 
 ---
 
