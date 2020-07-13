@@ -66,21 +66,17 @@ function showPage(list, page) {
 }
 ```
 
-<!--TODO check if the br element is needed for formatting in admin -->
 <div class="secondary box">
   <strong>Pro Tip:</strong> It is a good idea to regularly test your code as you are writing it. Using `console.log()` statements is a great way to do this. Before we go any farther, lets test our `showPage` function. First, add <code>console.log(list);</code> and <code>console.log(page);</code> inside of the function. Then call the function by adding <code>showPage(data, 1);</code> just below where you created the function. Now if you open the Dev Tools console you should see an array with 42 objects and the number "1" logged out. Once you confirm that your function is working you can remove the two <code>console.log</code> statements but leave the call of the <code>showPage</code> function as that will come in handy later.
 </div>
-<br>
 
 Now create two variables, `startIndex` and `endIndex`, which will calculate the index for the first and last student to display on the page. Use the `page` parameter and some basic math to calculate the value of these variables like so:
   * startIndex = (`page` parameter * items per page) - items per page
   * endIndex = `page` parameter * items per page
 
-<!--TODO check if the br element is needed for formatting in admin -->
 <div class="secondary box">
   <strong>Pro Tip:</strong> Remember, JavaScript is zero-indexed so the index of the first student object in `data` array would be 0. Before moving on, it would be a good idea to use <code>console.log()</code> statements to make sure these new variables are working as expected.
 </div>
-<br>
 
 Next use the [querySelector method](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) to select the `UL` element with a class of `student-list` and assign it to a new variable named `studentList`. This is the element we will be adding our student data to.
 
