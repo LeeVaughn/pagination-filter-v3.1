@@ -46,9 +46,9 @@ For best results, we are going to take it one small step at a time, testing our 
 
 ### 3. Display a “page”
 
-We are going to start by creating a function that will display a page of ten students. We will name this function `showPage`. This function will take two parameters: `list`, and `page`. The `list` parameter will represent the array student data we are working with and `page` parameter will be the page number that we want to show.
+We are going to start by defining a function that will display a page of ten students. We will name this function `showPage`. This function will take two parameters: `list`, and `page`. The `list` parameter will represent the array of student data we are working with and `page` parameter will be the page number that we want to show.
 
-This is what your function should look like, including placeholder comments for the functionality that we will be adding later in this step.
+Below is what your function should look like, including placeholder comments for the functionality that we will be adding later in this step.
 
 ```javascript
 function showPage(list, page) {
@@ -62,7 +62,7 @@ function showPage(list, page) {
     // inside the loop create a conditional to display the proper students
       // inside the conditional:
         // create the elements needed to display the student information
-        // insert or append the above elements
+        // insert the above elements
 }
 ```
 
@@ -107,6 +107,43 @@ Now that we have finished the `showPage` function we want to test it to make sur
 
 
 ### 4. Add Pagination Buttons
+
+Next we are going to define a function named `addPagination` that will create and display our pagination buttons. This function will take one parameter, `list`, which will represent the array of student data we are working with.
+
+Below is what your function should look like, including placeholder comments for the functionality that we will be adding later in this step.
+
+```javascript
+function addPagination(list) {
+  // create a variable to calculate the number of pages needed
+
+  // select the element with a class of `link-list` and assign it to a variable
+
+  // set the innerHTML property of the variable you just created to an empty string
+
+  // loop over the number of pages needed
+    // create the elements needed to display the pagination button
+    // insert the above elements
+
+  // give the first pagination button a class of "active"
+
+  // create an event listener on the `link-list` element
+    // if the click target is a button:
+      // remove the "active" class from the previous button
+      // add the active class to the clicked button
+      // call the showPage function passing the `list` parameter and page to display as arguments
+}
+```
+
+Next create a variable a variable named `numOfPages`, which will calculate the number of pagination buttons we will need. Use the `list` parameter, the [Math.ceil() function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil), and some basic math to calculate this variable like so:
+* numOfPages = Math.ceil (`list` length / items per page)
+
+<div class="secondary box">
+  <strong>Note:</strong> We use <code>Math.ceil</code> here so the result will be rounded up.
+</div>
+
+Then use the querySelector method to select the UL element with a class of `link-list` and assign it to a new variable named `linkList`. This is the element we will be adding our pagination buttons to.
+
+Next set the innerHTML property of the `linkList` variable to an empty string. This will remove any existing pagination buttons that might have been displayed previously.
 
 ---
 
