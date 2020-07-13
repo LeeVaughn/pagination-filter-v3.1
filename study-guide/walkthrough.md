@@ -68,7 +68,7 @@ function showPage(list, page) {
 
 <!--TODO check if the br element is needed for formatting in admin -->
 <div class="secondary box">
-  <strong>Pro Tip:</strong> It is a good idea to regularly test your code as you are writing it. Using `console.log()` statements is a great way to do this. Before we go any farther, lets test our `showPage` function. First, add <code>console.log(list);</code> and <code>console.log(page);</code> inside of the function. Then call the function by adding <code>showPage(data, 1)</code> just below where you created the function. Now if you open the Dev Tools console you should see an array with 42 objects and the number "1" logged out. Once you confirm that your function is working you can remove the two <code>console.log</code> statements but leave the call of the <code>showPage</code> function as that will come in handy later.
+  <strong>Pro Tip:</strong> It is a good idea to regularly test your code as you are writing it. Using `console.log()` statements is a great way to do this. Before we go any farther, lets test our `showPage` function. First, add <code>console.log(list);</code> and <code>console.log(page);</code> inside of the function. Then call the function by adding <code>showPage(data, 1);</code> just below where you created the function. Now if you open the Dev Tools console you should see an array with 42 objects and the number "1" logged out. Once you confirm that your function is working you can remove the two <code>console.log</code> statements but leave the call of the <code>showPage</code> function as that will come in handy later.
 </div>
 <br>
 
@@ -85,6 +85,27 @@ Now create two variables, `startIndex` and `endIndex`, which will calculate the 
 Next use the [querySelector method](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) to select the `UL` element with a class of `student-list` and assign it to a new variable named `studentList`. This is the element we will be adding our student data to.
 
 Now set the [innerHTML property](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) of the `studentList` variable to an empty string. This will remove any existing students that might have been displayed previously.
+
+Next we will create a for loop that will run once for each object in the `list` parameter. We can do this by using the `length` property of `list`.
+
+Inside the loop, create a conditional statement that checks if `i` is greater than or equal to the `startIndex` variable **and** less than the `endIndex` variable. These are the students we want to display on the page.
+
+If that condition is met, we will create the DOM elements needed to display that student, which we will assign to a variable named `studentItem`. We will create these elements using a template literal. You will use bracket notation to access the student object at a certain index and dot notation to access the specific properties of that student object. The end result should be elements that look like this:
+```html
+  <li class="student-item cf">
+    <div class="student-details">
+      <img class="avatar" src="https://randomuser.me/api/portraits/women/25.jpg" alt="Profile Picture">
+      <h3>Ethel Dean</h3>
+      <span class="email">ethel.dean@example.com</span>
+    </div>
+    <div class="joined-details">
+      <span class="date">Joined 12-15-2005</span>
+    </div>
+  </li>
+```
+Once the template literal is created, we want to insert it into the DOM on the `studentList` variable using the [insertAdjacentHTML method](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) and `beforeend` position.
+
+Now that we have finished the `showPage` function we want to test it to make sure everything is working as expected before we move on. To do this, call the `showPage` function and pass `data` and `1` as arguments, which you might already be doing if you tested your code previously. Refresh the application in the browser and you should see the first 10 students displayed on the page.
 
 ---
 
