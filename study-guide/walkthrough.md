@@ -31,7 +31,7 @@ You will find a list of resources on the right side of the project page, just be
 
 ### 2. Getting Started with the Project Files
 
-If you haven't already, open up the project in your text editor. Now open the project in Chrome and open up the Dev Tools console. If you don't remember how to open the project in a browser, check out this lesson for a refresher: [Preview Files in a Browser](https://teamtreehouse.com/library/preview-files-in-a-browser).
+If you haven't already, open up the project in your text editor. Now preview the project in Chrome and open up the Dev Tools console. If you don't remember how to open the project in a browser, check out this lesson for a refresher: [Preview Files in a Browser](https://teamtreehouse.com/library/preview-files-in-a-browser).
 
 Now return to your text editor and check out the `data.json` file. This file contains a `data` variable, which is an array of objects. Each of these objects contains information on a student. We will be using this data to display students and create pagination buttons.
 
@@ -46,7 +46,7 @@ For best results, we are going to take it one small step at a time, testing our 
 
 ### 3. Display a “page”
 
-We are going to start by defining a function that will display a page of ten students. We will name this function `showPage`. This function will take two parameters: `list`, and `page`. The `list` parameter will represent the array of student data we are working with and `page` parameter will be the page number that we want to show.
+We are going to start by defining a function that will display a page of ten students. We will name this function `showPage`. This function will take two parameters: `list`, and `page`. The `list` parameter will represent the array of student data we are working with and `page` parameter will be the page number that we want to display.
 
 Below is what your function should look like, including placeholder comments for the functionality that we will be adding later in this step.
 
@@ -189,9 +189,23 @@ When you call the `showPage` function you should pass `data` and `1` as argument
 
 ### 6. Finishing the Project
 
+We are nearing the finish line now! The next step is to review our project and make sure it is in keeping with best practices and works properly.
+
+Start by ensuring that your code is properly commented. Good code comments briefly describe your code and what it does.
+
+Next check the formatting of your code make sure that it is in keeping with best practices. This will improve the readability of your code.
+
+From there open your application and preview it in the browser. Test out the application like a user would, looking for bugs or other unexpected behavior. Be sure to keep the Dev Tools console open while you do this!
+
+Last but not least, consider testing out your application in multiple browsers. To pass, your app only needs to work in Chrome but it is common for developers to test their projects in multiple browsers.
+
 ---
 
 
 ### 7. Before Submitting the Project
+
+Before you submit your project, closely review the “**[How you’ll be graded](https://teamtreehouse.com/projects/list-pagination-and-filtering#how-you-ll-be-graded)**” section for this project and double-check that you have met all of those requirements.
+
+It is also a good idea to post your project in Slack for others to review before you officially submit it. 
 
 ---
