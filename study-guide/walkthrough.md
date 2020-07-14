@@ -135,7 +135,7 @@ function addPagination(list) {
 ```
 
 <div class="secondary box">
-  <strong>Pro Tip:</strong> Just like we did earlier with the <code>showPage</code> function, it would be a good idea to test our <code>addPagination</code> function before we go any further. To do that, add <code>console.log(list);</code> inside of the function. Then call the function by adding <code>addPagination(list);</code> just below where you declared the function. Then open the Dev Tools console and you should see an array with 42 objects logged out there. Be sure to continue to test your code as you work through the rest of this walkthrough!
+  <strong>Pro Tip:</strong> Just like we did earlier with the <code>showPage</code> function, it would be a good idea to test our <code>addPagination</code> function before we go any further. To do that, add <code>console.log(list);</code> inside of the function. Then call the function by adding <code>addPagination(data);</code> just below where you declared the function. Then open the Dev Tools console and you should see an array with 42 objects logged out there. Be sure to continue to test your code as you work through the rest of this walkthrough!
 </div>
 
 Next create a variable a variable named `numOfPages`, which will calculate the number of pagination buttons we will need. Use the `list` parameter, the [Math.ceil() function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil), and some basic math to calculate this variable and round it up like so:
@@ -157,14 +157,32 @@ Inside the loop, we will create the DOM elements needed to display the paginatio
 
 Once the template literal is created, will will insert it into the DOM on the `linkList` variable using the `insertAdjacentHTML` method and `beforeend` position.
 
+Next, we'll add the the `active` class to the first button. We can do this by using querySelector to select the first `button` element and then using the [className property](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) to set the class to `"active"`.
+
 <div class="secondary box">
-  <strong>Pro Tip:</strong> Hopefully you have been continuing to test your code as you go but either way, this would be a great point to test your <code>addPagination</code> function again. Be sure you are calling the <code>addPagination</code> and passing <code>list</code> as an argument, which you might already be doing if you have tested your code previously. If everything is working as it should, you should be able to refresh the page and see five pagination buttons on the screen. These buttons won't do anything yet but we will work on that part next.
+  <strong>Pro Tip:</strong> Hopefully you have been continuing to test your code as you go but either way, this would be a great point to test your <code>addPagination</code> function again. Be sure you are calling the <code>addPagination</code> and passing <code>data</code> as an argument, which you might already be doing if you have tested your code previously. If everything is working as it should, you should be able to refresh the page and see five pagination buttons on the screen. These buttons won't do anything yet but we will work on that part next!
 </div>
+
+Now create an [event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) on `linkList` that will be called when there is a click event.
+
+Inside this event listener, write a conditional that checks if the tagName of the event target (i.e. the element clicked) is a `BUTTON` element.
+
+If that condition is met, use querySelector to select the first element with a class of `active` and then set the className property to an empty string. This will remove the active class from the previous button. We can use querySelector here rather than looping over all of the buttons because there should only ever be one button with the `active` class.
+
+Still inside of the conditional, lets next add the `active` class to the button that was clicked (i.e. the click target). Again, we can do this using the className property.
+
+Last but not least, still in the conditional, we will call the `showPage` function passing the `list` parameter and the text content of the click target as arguments. We can access the text content of the click target by using the [textContent property](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent).
+
+At this point your `addPagination` function should be finished. Let's test it to make sure everything works as expected. Be sure that you are calling the `addPagination` function and passing `data` as an argument. If you refresh the page, you should see five pagination buttons on the screen. Clicking a button should display the ten students for that "page".
 
 ---
 
 
 ### 5. Call Functions
+
+Since you have been testing your code as you go, you have probably already called your `showPage` and `addPagination` functions at this point but if you haven't be sure to do so now.
+
+When you call the `showPage` function you should pass `data` and `1` as arguments. When you call the `addPagination` function you should pass `data` and an argument.
 
 ---
 
