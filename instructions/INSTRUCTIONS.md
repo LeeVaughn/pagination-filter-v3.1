@@ -163,12 +163,12 @@ Before you start the project, be sure to review the material and resources avail
 The final stage of the project is perhaps the most important. This is where your developer skills really shine as you carefully double-check that you've accomplished all requirements and that your project is ready for submission.
 
 * **Code comments** - It’s a best practice for development code to be well commented. Replace provided comments with your own to briefly describe your code and what it does.
-* **Code readability** - Readability is second only to functionality. Double-check your code to ensure the spacing and indentation is consistent and in keeping with best practices. 
-* **Cross browser consistency** - To pass, your project only needs to work in Chrome but it’s common for developers to test their projects in multiple browsers to know how they will perform out in the wild.
-* **Quality Assurance Testing** -  This is a key step in the development process.  
+* **Code readability** - Readability is second only to functionality. Double-check your code to ensure the spacing and indentation is consistent and in keeping with best practices.
+* **Quality Assurance Testing** - This is a key step in the development process.  
   * Open and run your app.
   * Open the Chrome DevTools console.
   * Pretend to be a user and test all aspects of functionality and every possible state of the app, while monitoring the console for bugs and resolving any that arise.
+* **Cross browser consistency** - To pass, your project only needs to work in Chrome but it’s common for developers to test their projects in multiple browsers to know how they will perform out in the wild.
 
 
 <!-- step -->
